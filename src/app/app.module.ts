@@ -13,9 +13,11 @@ import { AppRoutingModule } from './app-routing.module';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon'
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import Swal from 'sweetalert2';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import {HttpClientModule} from '@angular/common/http'
     MatInputModule,
     MatIconModule,
     MatFormFieldModule,
-    MatSnackBar,
+    MatSnackBarModule,
     RouterModule,
     AppRoutingModule,
     FormsModule,
