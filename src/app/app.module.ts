@@ -9,6 +9,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon'
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -22,7 +29,14 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    RouterModule
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSnackBar,
+    RouterModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
